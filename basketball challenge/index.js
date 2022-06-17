@@ -4,37 +4,18 @@ let winningColor
 let countHomeScore=0;
 let countAwayScore=0;
 
-function plus1Home(){
-    countHomeScore+=1;
+function plusHome(points){
+    countHomeScore+=points;
     homeScore.textContent = countHomeScore;
     winningTeam()
 }
-function plus2Home(){
-    countHomeScore+=2;
-    homeScore.textContent = countHomeScore;
-    console.log(awayScore.id);
-    winningTeam()
-}
-function plus3Home(){
-    countHomeScore+=3;
-    homeScore.textContent = countHomeScore;
-    winningTeam()
-}
-function plus1Away(){
-    countAwayScore+=1;
+
+function plusAway(points){
+    countAwayScore+=points;
     awayScore.textContent = countAwayScore;
     winningTeam()
 }
-function plus2Away(){
-    countAwayScore+=2;
-    awayScore.textContent = countAwayScore;
-    winningTeam()
-}
-function plus3Away(){
-    countAwayScore+=3;
-    awayScore.textContent = countAwayScore;
-    winningTeam()
-}
+
 function playAgain(){
     countHomeScore=0;
     countAwayScore=0;
